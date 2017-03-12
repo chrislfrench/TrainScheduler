@@ -14,14 +14,6 @@ firebase.initializeApp(config);
 // Create a variable to reference the database.
 var database = firebase.database();
 
-
-// initial values of table
-var name = "";
-var destination = "";
-var frequency = 0;
-var arrivalTime = 0;
-var arrivalAway = 0;
-
 // capture button click
 $("#add-train").on("click", function(){
 
