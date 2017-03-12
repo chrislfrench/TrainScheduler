@@ -17,6 +17,9 @@
 
 	<!-- Firebase reference -->
 	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	
+	<!-- javascript moment reference -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     
 
 </head>
@@ -105,23 +108,23 @@
             <form role="form">
               
               <div class="form-group">
-                <label for="name-input">Train Name:</label>
-                <input class="form-control" id="trainName-input" type="text">
+                <label for="trainName-input">Train Name:</label>
+                <input class="form-control" id="trainName-input" type="text" placeholder="">
               </div>
 
               <div class="form-group">
-                <label for="email-input">Destination:</label>
-                <input class="form-control" id="destination-input" type="email">
+                <label for="destination-input">Destination:</label>
+                <input class="form-control" id="destination-input" type="text" placeholder="">
               </div>
 
               <div class="form-group">
-                <label for="age-input">First Train Time (HH:mm - military time)</label>
-                <input class="form-control" id="time-input" type="text">
+                <label for="time-input">First Train Time (HH:mm - military time)</label>
+                <input class="form-control" id="time-input" type="text" placeholder="">
               </div>
 
               <div class="form-group">
-                <label for="name-input">Frequency:</label>
-                <input class="form-control" id="frequency-input" type="text">
+                <label for="frequency-input">Frequency:</label>
+                <input class="form-control" id="frequency-input" type="text" placeholder="">
               </div>
              
               <button class="btn btn-default" id="add-train" type="submit">Add Train</button>
