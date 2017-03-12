@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Train Scheduler</title>
+	<meta charset="utf-8">	
+	
+	<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
+	<!-- Link to google fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=McLaren" rel="stylesheet">
+
+
+	<!-- Firebase reference -->
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    
+
+</head>
+<body>
+
+<div id="wrapper">
+  
+  <div id='container'>
+			
+	<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="jumbotron" id="jumbo">
+      	<h1 class="text-center">Train Schedule</h1>
+      	<h3 class="text-center">"This is a train schedule"</h3>
+    	</div>
+    </div>
+    <div class="col-sm-2"></div>
+    </div>
+
+   	<br/>
+  			
+	<!-- <div class="row">
+   		<div class="col-sm-3"></div>
+   		<div class="col-sm-6" id="opener"><h2 class="text-center">Put some information here!</h2></div>
+   		<div class="col-sm-3"></div>
+	</div>   	 -->
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+   		<div class="col-sm-8" id="scheduleDiv">
+			<div class="panel panel-default" id="schedulePanel">
+			  <!-- Default panel contents -->
+			  <div class="panel-heading">Train Schedule</div>
+
+			  <!-- Table -->
+			  <table class="table">
+				<thead>
+			      <tr>
+			        <th>Train Name</th>
+			        <th>Destination</th>
+			        <th>Frequency (Min)</th>
+			        <th>Next Arrival</th>
+			        <th>Minutes Away</th>
+			      </tr>
+				</thead>
+			    <tbody>
+			      <tr>
+			        <td>Trenton Express</td>
+			        <td>Trenton</td>
+			        <td>25</td>
+			        <td>05:35 PM</td>
+			        <td>10</td>
+			      </tr>
+			      <tr>
+			     	<td>Trenton Express</td>
+			        <td>Trenton</td>
+			        <td>25</td>
+			        <td>05:35 PM</td>
+			        <td>10</td>
+			      </tr>
+			      <tr>
+			 		<td>Trenton Express</td>
+			        <td>Trenton</td>
+			        <td>25</td>
+			        <td>05:35 PM</td>
+			        <td>10</td>
+			      </tr>
+			    </tbody>			   
+			  </table>
+			</div>   			
+   		</div>
+   		<div class="col-sm-2"></div>
+   	</div>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+   		<div class="col-sm-8">
+   			
+		<div class="panel panel-default" id="trainForm">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Train</h3>
+          </div>
+          <div class="panel-body">
+
+            <form role="form">
+              
+              <div class="form-group">
+                <label for="name-input">Train Name:</label>
+                <input class="form-control" id="trainName-input" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="email-input">Destination:</label>
+                <input class="form-control" id="destination-input" type="email">
+              </div>
+
+              <div class="form-group">
+                <label for="age-input">First Train Time (HH:mm - military time)</label>
+                <input class="form-control" id="time-input" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="name-input">Frequency:</label>
+                <input class="form-control" id="frequency-input" type="text">
+              </div>
+             
+              <button class="btn btn-default" id="add-train" type="submit">Add Train</button>
+            </form>  
+          </div>
+        </div>
+        </div>
+
+   		<div class="col-sm-2"></div>
+  	</div>
+
+  	<div class="row">
+		<div class="col-sm-3"></div>
+  		<div class="col-sm-6"></div>
+		<div class="col-sm-3"></div>
+   	</div>
+   
+
+    <div class="row">
+   	
+		<div class="col-sm-6" id="footer"></div>
+		<div class="col-sm-6"></div>
+
+    </div>
+
+</div>
+
+<!-- JQuery Link -->
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	
+<!-- JQuery UI Link -->
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="crossorigin="anonymous"></script>
+	
+<!-- Link to my Javascript page.  -->
+<script src="./assets/javascript/app.js" type="text/javascript"></script>
+
+</body>
+</html>

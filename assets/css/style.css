@@ -1,0 +1,75 @@
+#body {
+
+	height: 100%;
+
+}
+
+#wrapper {
+
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	/*background-size: 1000px 667px;*/
+	background-size: cover;
+    /*background-position: center;*/
+
+}
+
+#jumbo{
+	
+	padding: 15px;
+	color: black;
+	background-color: #white;
+    display: inline-block;
+    font-family: 'McLaren', cursive;
+    margin: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#scheduleDiv{
+
+	/*padding: 15px;*/
+	color: black;
+	/*background-color: #black;*/
+    /*background-color: rgba(255,255,255,0.5);*/
+    display: inline-block;
+    font-family: 'McLaren', cursive;
+    margin: 10px;
+    /*width: 100%;*/
+}
+
+#schedulePanel{
+
+	/*width: 100%;*/
+	font-family: 'McLaren', cursive;
+}
+
+#trainForm{
+
+	display: inline-block;
+	margin: 10px;
+	width: 100%;
+
+}
+
+button{
+
+	width: 118px;
+	margin: 20px 20px 50px 20px;
+}
+
+#opener{
+
+	/*padding: 15px;*/
+	color: black;
+	background-color: #black;
+    background-color: rgba(255,255,255,0.5);
+    display: inline-block;
+    font-family: 'McLaren', cursive;
+    margin: 10px;
+}
+
+#footer{
+
+	margin: 50px 50px 200px 50px;
+}
