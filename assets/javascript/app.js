@@ -53,18 +53,11 @@ database.ref().on("child_added", function(childSnapshot){
   var firstTime = childSnapshot.val().firstTime;
   var frequency = childSnapshot.val().frequency;
 
-  //train info
-  // console.log(trainName);
-  // console.log(destination);
-  // console.log(firstTime);
-  // console.log(frequency);
 
   // //convert first time (push back 1 year to make sure it comes before current time)
   var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
   console.log(firstTimeConverted);
    
-  // //current time
-  var currentTime = moment();
 
   // //difference between the times
   var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
